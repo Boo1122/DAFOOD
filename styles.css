@@ -2,6 +2,52 @@ body, html {
     width: 100%;
     height: 100%;
     margin: auto;
+    background-color: gray;
+  }
+  #img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  #ingredients1 {
+    position: absolute;
+    height: 150px;
+    width: 300px;
+    margin-left: -630px;
+    margin-top: 420px;
+  }
+
+  #ingredients2 {
+    position: absolute;
+    width: 600px;
+    height: 330px;
+    transition: transform .4s;
+    margin-top: 250px;
+    margin-left: -30px;
+    
+  }
+
+  #ingredients2:hover {
+    transform: scale(1.4);
+  }
+
+  #ingredients3 {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 90px;
+    height: 150px;
+    width: 350px;
+  }
+
+  #h1 {
+    color: black;
+    margin-top: 5px;
+    margin-left: -100px;
+
+    
   }
   
   .header {
