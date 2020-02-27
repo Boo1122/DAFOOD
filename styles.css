@@ -100,26 +100,11 @@ body, html {
   
   }
   
-  .e-mail {
-  position: absolute;
-  padding: 8px;
-  margin-left: -285px;
-  height: 35px;
-  margin-top: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: 20px;  
-  width: 90px;
-  border-radius: 10%;
-  text-align: center;
-  
-   
-  }
-  
   
   #search {
     margin-left: auto;
-    margin-right: 50px;
-    padding: 7px;
+    margin-right: 90px;
+    padding: 6px;
     border-radius: 6px;
     width: 120px;
     border: 0.5px solid rgb(255, 255, 255);
@@ -258,30 +243,35 @@ text-align: right;
     
  #mail{
     width: 40px;
-padding-left: 40px;
-padding-top: 9px;
+    margin-left: 40px;
+    padding-top: 9px;
  }
-#mail a:hover {
-    color: aquamarine;
+
+#mail:hover {
+    background-color: aquamarine;
 }
 
 
-#insta{
+#insta {
     width: 40px;
-padding-left: 20px;
-padding-top: 9px;
+    margin-left: 20px;
+    padding-top: 9px;
+
 }
-#insta a:hover {
-    color: aquamarine;
+
+#insta:hover {
+    background-color: aquamarine;
 }
 
 #fb{
     width: 40px;
-padding-left: 20px;
-padding-top: 9px;
+    margin-left: 20px;
+    padding-top: 8px;
+  
 }
-#fb a:hover {
-    color: aquamarine;
+
+#fb:hover {
+    background-color: aquamarine;
 }
 
 
