@@ -40,8 +40,18 @@ function HomeButton(){
         img.src=flagShortName[index];
         flagContainer.appendChild(img); 
         img.style.margin = "20px";
-
       }
     }
 
+    function clickOnFlag(){
+      document.getElementById("flags").addEventListener("click", generateMealPage)
+      
+    }
+    function generateMealPage(event) {
+      console.log("generating meal page");
+      highlightMealButton();
+      hideHomePage();
+      getMealsFromServer(event.target.innerText);
+    }
+    
   HomeButton();
