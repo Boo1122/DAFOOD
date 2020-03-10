@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -8,61 +9,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAFOOD SITE</title>
 </head>
+
 <body>
     <div id="container">
-        
+
         <div class="header">
-            
+
             <nav role="navigation">
-          
-                <div id="menuToggle"> 
-                     <input type="checkbox"/>
-                     <span></span>
-                     <span></span>
-                     <span></span>
 
-                        <ul id="menu">
-                        <a href="#"><li>Contact</li></a>
-                        <a href="#"><li>About us</li></a>
-                        <a href="./Meals by country.html"><li>Meals by country</li></a>
-                        <a href="#"><li>Meals by name</li></a>
-                        <a href="#"><li>Meals by belief</li></a>
-                </ul> 
-            </div>  
-        </nav>  
-         
-           
-            <a class="fas fa-home"a id="home"></a>
-            <img class="logo" src="d.png"/>
-            
-            <input id="search" placeholder="search">
-        
-            
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+
+
+                        <div class="page" id="contact">
+
+
+                            <li><a href="#" data-target="contact" class="nav-link">Contact</a></li>
+
+                        </div>
+
+                        <div class="page" id="about us">
+                            <li><a href="#" data-target="about us" class="nav-link">About us</a></li>
+                            <div>
+
+                                <div class="page" id="Meals by country">
+
+                                    <li><a href="#" data-target="Meals by country" class="nav-link">Meals by country</a>
+                                    </li>
+                                </div>
+
+                                <div class="page" id="Meals by name">
+
+                                    <li><a href="#" data-target="Meals by name" class="nav-link">Meals by name</a>
+                                    </li>
+                                </div>
+
+
+
+
+
+                            </div>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="page active" id="home">
+
+                <a href="#" data-target="home" class="nav-link"> <a class="fas fa-home" a id="home"></a></a>
+
             </div>
-        </div>
-    </div> 
 
-             
+            <img class="logo" src="d.png" />
+            <input id="search" placeholder="search">
+
+
+        </div>
+    </div>
+    </div>
+
+
     <div id="img">
-        
+
         <button id="button">WORLD WIDE FOOD GALLERY</button>
         <img id="ingredients2" src="ingrerdients.png">
-        <img id="ingredients1" src="ingredients3.png" alt="">   
-        <img id="ingredients3" src="ingredients2.png" alt="">   
-         
-    </div> 
+        <img id="ingredients1" src="ingredients3.png" alt="">
+        <img id="ingredients3" src="ingredients2.png" alt="">
 
-        <div class="footer">
-           <a href="http://outlook.live.com/"> <img id="mail" src="buttons-02.png"></a>
-            <a href="https://www.instagram.com/accounts/emailsignup/?hl=en">  <img id="insta" src="buttons-01.png"></a>
-            <a href="https://www.facebook.com/"> <img id= "fb" src="buttons-03.png"></a>
-            <p>© All rights reserved by The Brotherhood of Food 2020</p>
-         </div>
-     </div>
-      
-    
+    </div>
+
+    <div class="footer">
+        <a href="http://outlook.live.com/"> <img id="mail" src="buttons-02.png"></a>
+        <a href="https://www.instagram.com/accounts/emailsignup/?hl=en"> <img id="insta" src="buttons-01.png"></a>
+        <a href="https://www.facebook.com/"> <img id="fb" src="buttons-03.png"></a>
+        <p>© All rights reserved by The Brotherhood of Food 2020</p>
+    </div>
+    </div>
+
+
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./script.js"></script>
-   
+    <script src="./singlePage.js"></script>
+
 </body>
+
 </html>
