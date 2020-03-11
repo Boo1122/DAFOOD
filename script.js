@@ -41,7 +41,7 @@ if (location.href == "./Meals by country.html"){
       flagContainer.appendChild(img); 
       img.style.margin = "20px";
     }
-  if (location.href == "http://127.0.0.1:5501/MealsByCountry.html"){
+  if (location.href == "/MealsByCountry.html"){
     generateFlagPage();
   }
 
