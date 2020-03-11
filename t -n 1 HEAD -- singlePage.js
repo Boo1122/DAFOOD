@@ -1,0 +1,24 @@
+[33mcommit d25442337d6260f0431caa86875dcc2fc349e558[m
+Author: Boo1122 <you@example.com>
+Date:   Wed Mar 11 08:40:27 2020 +0200
+
+    asd
+
+
+ delete mode 100644 singlePage.js
+
+[33mcommit 5ae073f1a9cd3eeef21ac336aeb1e9156d9d274f[m
+Author: Boo1122 <you@example.com>
+Date:   Wed Mar 11 00:23:16 2020 +0200
+
+    navigation site added
+
+ delete mode 100644 searchButton.js
+
+[33mcommit ca883e87288bbc0873f42355bde124154d129aca[m
+Author: AlexandruNasalean <alexandru.nasalean@outlook.com>
+Date:   Sun Mar 1 18:38:34 2020 +0200
+
+    update
+
+ delete mode 100644 MealsByCountry,html

@@ -29,11 +29,6 @@ const app = {
         pageShown: function(ev) {
             console.log('page', ev.target.id, 'just shown' );
             let title = ev.target.querySelector('title')
-            h1.classList.add('big'); 
-            setTimeout((h)=> {
-                h.classList.remove('big')
-            }, 1000, h1);
-
     },
 
     poppin: function(ev) {
