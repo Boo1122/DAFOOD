@@ -16,29 +16,60 @@
         <div class="header">
 
             <nav role="navigation">
-          
-                <div id="menuToggle"> 
-                     <input type="checkbox"/>
-                     <span></span>
-                     <span></span>
-                     <span></span>
 
-                        <ul id="menu">
-                        <a href="#"><li>Contact</li></a>
-                        <a href="#"><li>About us</li></a>
-                        <a href="./Meals by country.html"><li>Meals by country</li></a>
-                        <a href="#"><li>Meals by name</li></a>
-                        
-                </ul> 
-            </div>  
-        </nav>  
-         
-           
-            <a class="fas fa-home"a id="home"></a>
-            <img class="logo" src="d.png"/>    
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <div class="page" id="contact">
+                            <a href="#" data-target="contact" class="nav-link">
+                                <li> Contact</li>
+                            </a>
+
+                        </div>
+
+
+                        <div class="page" id="about">
+
+                            <a href="#" data-target="about" class="nav-link">
+                                <li>About us</li>
+                            </a>
+                        </div>
+
+                        <div class="page" id="meals">
+                            <a href="#" data-target="meals" class="nav-link">
+                                <li>Meals by name</li>
+                            </a>
+
+                            <div>
+
+                                </a>
+                                <a href="./Meals by country.html">
+                                    <li>Meals by country</li>
+                                </a>
+
+
+                    </ul>
+                </div>
+            </nav>
+            <div class="page active" id="home">
+
+
+                <a class="fas fa-home" a id="home"> <a href="#" data-target="home" class="nav-link"></a></a>
+
+            </div>
+            <img class="logo" src="d.png" />
             <input id="search" placeholder="search">
-        
-    </div>
+
+
+
+
+
+
+        </div>
     </div>
 
 
@@ -62,9 +93,10 @@
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./script.js"></script>
+    <script src="navigatePages.js"></script>
 
     <script src="./hideBurger.js"></script>
-    
+
 
 </body>
 
