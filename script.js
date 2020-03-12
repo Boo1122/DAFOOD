@@ -4,7 +4,7 @@ function HomeButton(){
     window.location.href = "./index.html";
   })
   }
-if (location.href == "./Meals by country.html"){
+if (location.href == "./http://127.0.0.1:5501/meals-by-country.html"){
   generateFlagPage();
 }
 
