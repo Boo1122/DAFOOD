@@ -2,103 +2,117 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DAFOOD SITE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAFOOD SITE</title>
 </head>
 
-<body>
-    <div id="container">
+<body id="body">
 
-        <div class="header">
-
-            <nav role="navigation">
-
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                    <ul id="menu">
-                        <div class="page " id="contact">
-                            <li><a href="#contact" data-target="contact" class="nav-link">Contact</a></li>
+  <div class="container-fluid">
 
 
-                        </div>
-                        <div class="page" id="about-us">
+    <nav class="navbar navbar-expand-lg navbar-custom ">
 
-                            <li> <a href="#about-us" data-target="about-us" class="nav-link">About us </a></li>
+      <img class="logo" src="/iconsAndPics/d.png" />
 
-                        </div>
-
-                        <div class="page" id="meals-by-name">
+      <a class="navbar-brand " href="#"></a> <a class="fas fa-home nav-link" data-target="home" id="home"></a></a>
 
 
-                            <li><a href="#meals-by-name" data-target="meals-by-name" class="nav-link">Meals by name </a>
-                            </li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav ">
 
-                        </div>
-
-                        <div class="page" id="meals-by-country">
-
-
-                            <li><a href="#meals-by-country" data-target="meals-by-country" class="nav-link">Meals by
-                                    country </a></li>
+        <ul class="nav text-white">
+          <li class="nav-item">
+            <a class="nav-link" id="about" data-target="about"> About us <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="meals1" data-target="meals1"> Meals by name</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="meals2" data-target="meals2">Meals by country </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact" data-target="contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 
 
-                        </div>
-                    </ul>
-
-                </div>
-            </nav>
-
-            <div class="page active" id="home">
-                <a href="#home" data-target="home" class="nav-link"> <a class="fas fa-home" a id="home"></a></a>
-
-
-            </div>
-            <img class="logo" src="d.png" />
-            <input id="search" placeholder="search">
-
-
-
-
-
-
-        </div>
+    <div class="page show-page active card w-25 mx-auto text-white" id="home-page">
+      <div class="card-body">
+        <h5 class="card-title ">WELCOME TO OUR SITE!</h5>
+        <div>PREPARE TO EAT!</div>
+        <div>We have chosen the best meals for you!</div>
+        <div>Find more about this in our gallery below.</div>
+        <a href="#" class="btn btn-primary" id="btn">WORLD WIDE FOOD GALLERY</a>
+      </div>
     </div>
 
 
-    <div id="img">
+    <div class="card bg-dark text-white page hide-page active" style="height: 42rem; margin-top: 0px;" id="about-page">
+      <img class="card-img">
+      <div class="card-img-overlay ">
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
 
-        <button id="button">WORLD WIDE FOOD GALLERY</button>
-        <img id="ingredients2" src="ingrerdients.png">
-        <img id="ingredients1" src="ingredients3.png" alt="">
-        <img id="ingredients3" src="ingredients2.png" alt="">
+
+    <div class="page hide-page active card " id="meals1-page">
+      <div class="card-body">
+        This is some text within a card body.
+      </div>
+    </div>
+
+    <div class=" page hide-page active" id="meals2-page">
 
     </div>
+
+    <div class="page hide-page active card bg-dark text-white" id="contact-page">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+          This content is a little bit longer.</p>
+        <p class="card-text">Last updated 3 mins ago</p>
+      </div>
+    </div>
+
+
+
+
 
     <div class="footer">
-        <a href="http://outlook.live.com/"> <img id="mail" src="buttons-02.png"></a>
-        <a href="https://www.instagram.com/accounts/emailsignup/?hl=en"> <img id="insta" src="buttons-01.png"></a>
-        <a href="https://www.facebook.com/"> <img id="fb" src="buttons-03.png"></a>
-        <p>© All rights reserved by The Brotherhood of Food 2020</p>
+      <a href="http://outlook.live.com/"> <img id="mail" src="/iconsAndPics//buttons-02.png"></a>
+      <a href="https://www.instagram.com/accounts/emailsignup/?hl=en"> <img id="insta"
+          src="/iconsAndPics//buttons-01.png"></a>
+      <a href="https://www.facebook.com/"> <img id="fb" src="/iconsAndPics//buttons-03.png"></a>
+      <p>© All rights reserved by The Brotherhood of Food 2020</p>
     </div>
-    </div>
 
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="./script.js"></script>
-    <script src="navigatePages.js"></script>
+  </div>
 
-    <script src="./hideBurger.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
 
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+  <script src="./navigateHistory.js"></script>
+  <script src="./navigatePages.js"></script>
 </body>
 
 </html>

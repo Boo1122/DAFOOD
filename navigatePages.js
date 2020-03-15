@@ -1,97 +1,75 @@
-// const app = {
-//     pages: [],
-//     show: new Event('show'),
-//     init: function() {
-//         app.pages = document.querySelectorAll('.page');
-//         app.pages.forEach((pg)=>{
-//             pg.addEventListener('show', app.pageShown);
-//         })
 
-//         document.querySelectorAll('.nav-link').forEach((link)=>{
-//             link.addEventListener('click', app.nav);
-//         })
+function home() {
+  
+    for (const page of document.getElementsByClassName('page')) {
+        const buttonId = page.id.split('-')[0];
+        document.getElementById(buttonId).addEventListener("click", () => {
+          for (const pageIn of document.getElementsByClassName('page')) {
+            pageIn.classList.remove("show-page");
+            pageIn.classList.add("hide-page");
+          }
+          page.classList.add("show-page");
+          page.classList.remove("hide-page");
+        });
+      }
+    
+    } 
+    
+   
+    function showFlags() {
+    
+      let meals2 = document.getElementById('meals2');
+      meals2.addEventListener('click', () => {
+        generateFlagPage();
 
+      }, {once :true});
+    
+    } 
 
-//         history.replaceState({}, 'Home', '#home')
-//         window.addEventListener('popstate', app.poppin)
-//     },    
-
-//     nav: function(ev) {
-//         ev.preventDefault();
-//         // console.log(ev.target)
-//         let currentPage = ev.target.getAttribute('data-target');
-//         document.querySelector('.active').classList.remove('active');
-//         document.getElementById(currentPage).classList.add('active');
-//         history.pushState({}, currentPage, `${currentPage}`);
-//         document.getElementById(currentPage).dispatchEvent(app.show)
-
-//     }, 
-
-//     pageShown: function(ev) {
-//         console.log('page', ev.target.id, 'just shown' );
-//         let title = ev.target.querySelector('active')
-
-
-//     },
-//     poppin: function(ev) {
-//         console.log(location.hash, 'popstate event');
-//         let hash = location.hash.replace('#', '');
-//         document.querySelector('.active').classList.remove('active');
-//         document.getElementById(hash).classList.add('active');
-//         document.getElementById(hash).dispatchEvent(app.show);
-//     }
-
-// }
-
-// document.addEventListener('DOMContentLoaded', app.init);
-
-
-
-window.onhashchange = function () {
-    render(window.location.hash);
-}
-
-function render(hashKey) {
-    let page = document.querySelectorAll('.page');
-    for (let i = 0; i < page.length; i++) {
-        page[i].style.display = 'none';
-
+    
+    function generateFlagPage(){
+      let meals = document.getElementById('meals2-page');
+      const flagPage = document.createElement("div");
+      flagPage.classList.add("flag-page");
+      flagPage.id = "flag-page";
+      meals.appendChild(flagPage);
+      addExplantion(flagPage);
+      generateFlags(flagPage);
+      }
+       
+    
+      function addExplantion(flagPage){
+        const explanation = document.createElement("h2");
+        explanation.classList.add("explanation");
+        explanation.innerText = "Choose a flag";
+        explanation.style.textAlign = "center";
+        flagPage.appendChild(explanation);
+      }
+    
+      function generateFlags(flagPage){
+    
+        const flagShortName = ['/CountryFlags/mx.png', '/CountryFlags/pt.png', "/CountryFlags/fr.png", "/CountryFlags/gb.png", "/CountryFlags/us.png", "/CountryFlags/tn.png", "/CountryFlags/ar.png", '/CountryFlags/ca.png'];
+        const flagContainer = document.createElement('div');
+        flagContainer.classList.add("flag-Container");
+        flagContainer.style.textAlign = "center";
+        flagPage.appendChild(flagContainer);
+    
+        for (let index = 0; index < flagShortName.length; index++) {
+          const img = document.createElement("img");
+          img.id="flags"
+          img.src=flagShortName[index];
+          flagContainer.appendChild(img); 
+          img.style.margin = "20px";
+        }
+     
+ 
     }
-}
+  home();
+
+  showFlags();
+  
+
+ 
 
 
-switch (hashKey) {
-    case "":
-        page[0].style.display = 'block';
-        break;
 
-    case "#home":
-        page[0].style.display = 'block';
-        document.getElementById('home').classList.add('active')
-        break;
-
-    case "#contact":
-        page[0].style.display = 'block';
-        document.getElementById('contact').classList.add('active')
-        break;
-
-    case "#about-us":
-        page[0].style.display = 'block';
-        document.getElementById('about-us').classList.add('active')
-        break;
-
-    case "#meals-by-name":
-        page[0].style.display = 'block';
-        document.getElementById('meals-by-name').classList.add('active')
-        break;
-
-    case "#meals-by-country":
-        page[0].style.display = 'block';    
-        document.getElementById('meals-by-country').classList.add('active')
-        break;
-
-    default: 
-        page[0].style.display = 'block';    
-        document.getElementById('home').classList.add('active')
-
-}
